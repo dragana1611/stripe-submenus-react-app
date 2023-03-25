@@ -1,28 +1,36 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
-import React from 'react';
+import {
+  FaBriefcase,
+  FaConnectdevelop,
+  FaTerminal,
+  FaMoneyCheckAlt,
+} from "react-icons/fa";
+import { GiHelp } from "react-icons/gi";
+import { BiLibrary } from "react-icons/bi";
+import { BsCreditCardFill, BsPlugin, BsInfoCircleFill } from "react-icons/bs";
+import React from "react";
 const sublinks = [
   {
-    page: 'products',
+    page: "products",
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label: "payment", icon: <BsCreditCardFill />, url: "/products" },
+      { label: "terminal", icon: <FaTerminal />, url: "/products" },
+      { label: "connect", icon: <FaConnectdevelop />, url: "/products" },
     ],
   },
   {
-    page: 'developers',
+    page: "developers",
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      { label: "plugins", icon: <BsPlugin />, url: "/products" },
+      { label: "libraries", icon: <BiLibrary />, url: "/products" },
+      { label: "help", icon: <GiHelp />, url: "/products" },
+      { label: "billing", icon: <FaMoneyCheckAlt />, url: "/products" },
     ],
   },
   {
-    page: 'company',
+    page: "company",
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: "about", icon: <BsInfoCircleFill />, url: "/products" },
+      { label: "customers", icon: <FaBriefcase />, url: "/products" },
     ],
   },
 ];

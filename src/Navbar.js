@@ -10,19 +10,22 @@ const Navbar = () => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
-    const bottom = tempBtn.bottom - 3;
+    const bottom = tempBtn.bottom - 3; //3px
+
     openSubmenu(page, { center, bottom });
   };
+
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains("link-btn")) {
       closeSubmenu();
     }
   };
+
   return (
     <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="nav-logo" alt="" />
+          <img src={logo} className="nav-logo" alt="logo" />
           <button className="btn toggle-btn" onClick={openSidebar}>
             <FaBars />
           </button>
